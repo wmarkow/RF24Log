@@ -80,18 +80,20 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:acc30ca4b505e752d787a523d1007a5b0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0">RF24LogLevel</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0a2fd6f336d08340583bd620a7f5694c90">ERROR</a> = 0
-, <a class="el" href="_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0a74dac7ac23d5b810db6d4067f14e8676">WARN</a>
-, <a class="el" href="_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0a748005382152808a72b1a9177d9dc806">INFO</a>
-, <a class="el" href="_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0a0593585da9181e972974c1274d8f2b4f">DEBUG</a>
+&#160;&#160;<a class="el" href="_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0aac132f2982b98bcaa3445e535a03ff75">OFF</a> = 0b0000000
+, <a class="el" href="_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0a2fd6f336d08340583bd620a7f5694c90">ERROR</a> = 0b00001000
+, <a class="el" href="_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0a74dac7ac23d5b810db6d4067f14e8676">WARN</a> = 0b00010000
+, <a class="el" href="_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0a748005382152808a72b1a9177d9dc806">INFO</a> = 0b00011000
 , <br />
-&#160;&#160;<a class="el" href="_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0a7fa27e82c6c4f69434225ed81e5d151e">TRACE</a>
+&#160;&#160;<a class="el" href="_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0a0593585da9181e972974c1274d8f2b4f">DEBUG</a> = 0b00100000
+, <a class="el" href="_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0a7fa27e82c6c4f69434225ed81e5d151e">TRACE</a> = 0b00101000
+, <a class="el" href="_r_f24_log_level_8h.html#acc30ca4b505e752d787a523d1007a5b0ab1d5eac4b1dca480c8056eaea7663b7a">ALL</a> = 0b11111111
 <br />
  }</td></tr>
 <tr class="separator:acc30ca4b505e752d787a523d1007a5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Created on: 2 Oct 2020 Author: wmarkowski</p>
+<div class="textblock"><p>Created on: 2 Oct 2020 Author: Witold Markowski (wmarkow)</p>
 <p>Copyright (C) 2020 Witold Markowski (wmarkow) 2021 Brendan Doherty (2bndy5)</p>
 <p>This General Public License does not permit incorporating your program into proprietary programs. If your program is a subroutine library, you may consider it more useful to permit linking proprietary applications with the library. If this is what you want to do, use the GNU Lesser General Public License instead of this License. </p>
 
@@ -110,7 +112,9 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>the predefined logging levels </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acc30ca4b505e752d787a523d1007a5b0a2fd6f336d08340583bd620a7f5694c90"></a>ERROR&#160;</td><td class="fielddoc"><p>the level to specify an error message </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acc30ca4b505e752d787a523d1007a5b0aac132f2982b98bcaa3445e535a03ff75"></a>OFF&#160;</td><td class="fielddoc"><p>the level to disable all log messages </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acc30ca4b505e752d787a523d1007a5b0a2fd6f336d08340583bd620a7f5694c90"></a>ERROR&#160;</td><td class="fielddoc"><p>the level to specify an error message </p>
 </td></tr>
 <tr><td class="fieldname"><a id="acc30ca4b505e752d787a523d1007a5b0a74dac7ac23d5b810db6d4067f14e8676"></a>WARN&#160;</td><td class="fielddoc"><p>the level to specify an warning message </p>
 </td></tr>
@@ -119,6 +123,8 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="acc30ca4b505e752d787a523d1007a5b0a0593585da9181e972974c1274d8f2b4f"></a>DEBUG&#160;</td><td class="fielddoc"><p>the level to specify an debugging message </p>
 </td></tr>
 <tr><td class="fieldname"><a id="acc30ca4b505e752d787a523d1007a5b0a7fa27e82c6c4f69434225ed81e5d151e"></a>TRACE&#160;</td><td class="fielddoc"><p>the level to specify an traceback message </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acc30ca4b505e752d787a523d1007a5b0ab1d5eac4b1dca480c8056eaea7663b7a"></a>ALL&#160;</td><td class="fielddoc"><p>the level to enable all log messages </p>
 </td></tr>
 </table>
 
