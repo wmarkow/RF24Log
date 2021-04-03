@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['sethandler_37',['setHandler',['../class_r_f24_logger.html#a2b6d6098ff3862c5aa46694dfa1457f2',1,'RF24Logger']]],
-  ['setloglevel_38',['setLogLevel',['../class_r_f24_log_handler.html#a017777bdc4657a975c5c271a8949427d',1,'RF24LogHandler']]]
+  ['sethandler_36',['setHandler',['../class_r_f24_logger.html#a2b6d6098ff3862c5aa46694dfa1457f2',1,'RF24Logger']]],
+  ['setloglevel_37',['setLogLevel',['../class_r_f24_log_handler.html#a017777bdc4657a975c5c271a8949427d',1,'RF24LogHandler']]]
 ];
