@@ -81,8 +81,8 @@ $(function() {
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if defined (ARDUINO_ARCH_AVR)</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">  #define RF24LOG_FLASHIFY(A) F(A)</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">  #define RF24LOGGER_info(vendorId, message, ...) (rf24Logger.log(RF24LogLevel::INFO, RF24LOG_FLASHIFY(vendorId), RF24LOG_FLASHIFY(message), ##__VA_ARGS__))</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#elif</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">  #define RF24LOGGER_info(vendorId, message, ...) (rf24Logger.log(RF24LogLevel::INFO, (const __FlashStringHelper*)(vendorId), RF24LOG_FLASHIFY(message), ##__VA_ARGS__))</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">  #define RF24LOGGER_info(vendorId, message, ...) (rf24Logger.log(RF24LogLevel::INFO, vendorId, message, ##__VA_ARGS__))</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
